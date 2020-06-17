@@ -36,26 +36,3 @@ for filename in glob.glob('process/*'):
         getDominantColor(im, str(filename[8:]))
     except:
         print(str(filename) + ' is not an image')
-
-
-"""
-purple = (138, 43, 226)
-
-black = (-50, -50, -50)
-
-violet = (125, 0, 255)
-
-image = (92, 67, 98)
-
-
-def helper(name, name2):
-    r, g, b = name
-    cr, cg, cb = name2
-    color_diff = sqrt(abs(r - cr)**2 + abs(g - cg)**2 + abs(b - cb)**2)
-    return color_diff
-
-
-print(helper(image, black))
-print(helper(image, violet))
-print(helper(image, purple))`
-"""

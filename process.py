@@ -98,3 +98,26 @@ def get_closest_color(rgb):
         color_diff = sqrt(abs(r - cr)**2 + abs(g - cg)**2 + abs(b - cb)**2)
         color_diffs.append((color_diff, color))
     return COLOR_NAMES.get(min(color_diffs)[1])
+
+
+"""
+purple = (138, 43, 226)
+
+black = (-50, -50, -50)
+
+violet = (125, 0, 255)
+
+image = (92, 67, 98)
+
+
+def helper(name, name2):
+    r, g, b = name
+    cr, cg, cb = name2
+    color_diff = sqrt(abs(r - cr)**2 + abs(g - cg)**2 + abs(b - cb)**2)
+    return color_diff
+
+
+print(helper(image, black))
+print(helper(image, violet))
+print(helper(image, purple))`
+"""
