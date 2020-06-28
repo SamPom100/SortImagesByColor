@@ -40,4 +40,5 @@ def main():
             print(str(filename) + ' is not an image')
 
 
+# run the image sort
 main
