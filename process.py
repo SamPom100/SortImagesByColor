@@ -33,7 +33,7 @@ def getDominantColor(img, filename):
         rgb = ImageColor.getcolor('#'+color, "RGB")
         colorName = get_closest_color(rgb)
         img.save('output/'+colorName+'/'+filename, 'PNG')
-        print(filename + ' is '+colorName)
+        return(filename + ' is '+colorName)
     except:
         print(filename + ' was broken')
 
